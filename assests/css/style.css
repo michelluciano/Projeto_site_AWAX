@@ -35,6 +35,10 @@ header{
     border-radius: 40px;
 }
 
+.menu-opener{
+ display: none;
+}
+
 .menu{
     flex:1;
     display: flex;
@@ -506,6 +510,7 @@ header{
     text-align: center;
     border-left: 1px solid #333;
     padding: 15px;
+  
 }
 
 .section-footer:first-child {
@@ -519,10 +524,13 @@ header{
 }
 
 .section-footers p{
-    margin-top: 200px;
+    margin-top: 20px;
     font-size: 13px;
     color: #999;
+}
 
+.section-footer--social{
+    margin-bottom: 120px;
 }
 
 .section-footer--social img{
@@ -530,4 +538,237 @@ header{
     text-align: center;
     margin-left: 10px;
   
+}
+
+.newsletters{
+    background-color: #222;
+    width: 100%;
+    height: 100%;
+}
+
+.newsletters form{
+    padding-top: 50px;
+    text-align: center;
+    align-items: center;
+}
+
+.newsletters hr{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 10px;
+    
+}
+
+.newsletters input{
+    background: #222;
+    color: white;
+    text-transform: uppercase;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    text-align: center;
+}
+
+/*RESPONSIVIDADE para TABLET*/
+/*================================*/
+@media (min-width: 450px) and (max-width: 800px){
+    .logo{
+        margin-left: 30px;
+    }
+    
+    .menu-opener{
+        display: block;
+        width: 45px;
+        margin-right: 30px;
+    }
+    
+    nav{
+        /*display: none;*/
+        position: absolute;
+        z-index: 99;
+        background-color: rgb(0,0,0,0.9);
+        width: 80vw;
+        height: 100vw;
+        top: 100px;
+        right: 0;
+    }
+
+    .menu ul{
+        flex-direction: column;
+    }
+
+    .menu li{
+
+    }
+
+    .menu li a{
+        font-weight: bold;
+        height: 80px;
+        font-size: 27px;
+        margin-right: 50px;
+        border: 0 none;
+    }
+
+    .menu li.active a{
+        border: 0 none;
+        color: #b28756;
+    }
+    /*section About us*/
+
+    .section-aboutus{
+        flex-direction: column;
+    }
+
+    .section-aboutus--left{
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
+
+    .section-aboutus--right{
+        width: auto;
+    }
+
+      /*section SERVICES*/
+    .section-services{
+        flex-wrap: wrap;
+    }
+
+    .section-service{
+        min-width: 50%;
+        margin-bottom: 30px;
+    }
+
+    .section-service:first-child{
+        border-left: 0;
+    }
+
+    /*SECTION TEAM*/
+    .section-team{
+        max-width: 580px;
+    }
+
+    /*section MAP*/
+    .section-map{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .section-map--area{
+        width: auto;
+    }
+
+    .section-map--info{
+        width: auto;
+    }
+
+    .section-map--info-item{
+        margin-bottom: 20px;
+    }
+
+    .section-map--info-item:last-child{
+        margin-bottom: 0;
+    }
+}/*Fim responsividade para tabelt*/
+
+/*RESPONSIVIDADE para CELULAR*/
+/*================================*/
+@media (max-width: 450px){
+    .logo{
+        margin-left: 30px;
+    }
+    
+    .menu-opener{
+        display: block;
+        width: 45px;
+        margin-right: 30px;
+    }
+    
+    nav{
+        /*display: none;*/
+        position: absolute;
+        z-index: 99;
+        background-color: rgb(0,0,0,0.9);
+        width: 90vw;
+        height: calc(100vh - 100px);
+        top: 100px;
+        right: 0;
+    }
+
+    .menu ul{
+        flex-direction: column;
+    }
+
+    .menu li{
+
+    }
+
+    .menu li a{
+        font-weight: bold;
+        height: 60px;
+        font-size: 20px;
+        margin-right: 50px;
+        border: 0 none;
+    }
+
+    .menu li.active a{
+        border: 0 none;
+        color: #b28756;
+    }
+    /*section About us*/
+
+    .section-aboutus{
+        flex-direction: column;
+    }
+
+    .section-aboutus--left{
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
+
+    .section-aboutus--right{
+        width: auto;
+    }
+
+      /*section SERVICES*/
+    .section-services{
+        flex-wrap: wrap;
+    }
+
+    .section-service{
+        min-width: 50%;
+        margin-bottom: 30px;
+    }
+
+    .section-service:first-child{
+        border-left: 0;
+    }
+
+    /*SECTION TEAM*/
+    .section-team{
+        max-width: 580px;
+    }
+
+    /*section MAP*/
+    .section-map{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .section-map--area{
+        width: auto;
+    }
+
+    .section-map--info{
+        width: auto;
+    }
+
+    .section-map--info-item{
+        margin-bottom: 20px;
+    }
+
+    .section-map--info-item:last-child{
+        margin-bottom: 0;
+    }
 }
