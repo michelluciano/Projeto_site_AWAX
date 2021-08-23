@@ -205,10 +205,6 @@ header{
     color: #fff;
 }
 
-.button{
-
-}
-
 
 /*----------------------------*/
 /*CSS DE AREAS ESPECIFICAS*/
@@ -583,12 +579,12 @@ header{
     }
     
     nav{
-        /*display: none;*/
+        display: none;
         position: absolute;
         z-index: 99;
         background-color: rgb(0,0,0,0.9);
         width: 80vw;
-        height: 100vw;
+        height: 100vh;
         top: 100px;
         right: 0;
     }
@@ -597,11 +593,7 @@ header{
         flex-direction: column;
     }
 
-    .menu li{
-
-    }
-
-    .menu li a{
+     .menu li a{
         font-weight: bold;
         height: 80px;
         font-size: 27px;
@@ -685,7 +677,7 @@ header{
     }
     
     nav{
-        /*display: none;*/
+        display: none;
         position: absolute;
         z-index: 99;
         background-color: rgb(0,0,0,0.9);
@@ -699,15 +691,11 @@ header{
         flex-direction: column;
     }
 
-    .menu li{
-
-    }
-
     .menu li a{
         font-weight: bold;
         height: 60px;
         font-size: 20px;
-        margin-right: 50px;
+        margin-right: 30px;
         border: 0 none;
     }
 
@@ -715,6 +703,17 @@ header{
         border: 0 none;
         color: #b28756;
     }
+    /*banner*/
+    .banner h1{
+        font-size: 30px;
+    }
+
+    .banner h2{
+        font-size: 17px;
+    }
+
+    
+
     /*section About us*/
 
     .section-aboutus{
@@ -729,6 +728,12 @@ header{
 
     .section-aboutus--right{
         width: auto;
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
+
+    .section-aboutus--right img{
+        width: 100%;
     }
 
       /*section SERVICES*/
@@ -737,7 +742,7 @@ header{
     }
 
     .section-service{
-        min-width: 50%;
+        min-width: 100%;
         margin-bottom: 30px;
     }
 
@@ -745,15 +750,30 @@ header{
         border-left: 0;
     }
 
+    /*our projects*/
+    .section-projects--filters{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .section-projects--photo{
+        width: 320px;
+    }
+
+    .section-projects--photoarea{
+        width: 300px;
+        height: 190px;
+    }
+
     /*SECTION TEAM*/
     .section-team{
-        max-width: 580px;
+        max-width: 280px;
     }
 
     /*section MAP*/
     .section-map{
-        padding-left: 30px;
-        padding-right: 30px;
+        padding:0;
+        padding-bottom: 250px;
     }
 
     .section-map--area{
@@ -770,5 +790,21 @@ header{
 
     .section-map--info-item:last-child{
         margin-bottom: 0;
+    }
+
+    /*footer*/
+    .section-footers{
+        display: block;
+    }
+
+    .section-footer--social{
+        margin-bottom: 20px;
+    }
+    .newsletters{
+        padding: auto;        
+    }
+
+    .newsletters form{
+        padding: 30px;        
     }
 }
